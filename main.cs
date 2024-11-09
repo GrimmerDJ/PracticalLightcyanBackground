@@ -55,13 +55,17 @@ class GreenvilleRevenue
         Console.WriteLine($"\nRevenue expected this year is: ${expectedRevenue}");
 
 
-        if (thisYearContestants > lastYearContestants)
+        if (thisYearContestants > 2*lastYearContestants)
         {
-            Console.WriteLine("It is true that this year's competition is bigger than last year's."); //what a weird way to say that
+            Console.WriteLine("The competition is more than twice as big this year!");
+        }
+        else if (thisYearContestants > lastYearContestants)
+        {
+            Console.WriteLine("The competition is bigger than ever!");
         }
         else if (thisYearContestants < lastYearContestants)
         {
-            Console.WriteLine("This year's competition has fewer contestants than last year.");
+            Console.WriteLine("A tighter race this year! Come out and cast your vote!");
         }
         else
         {
